@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Syne";
+    src: url("./fonts/Syne.ttf");
+}
+
+body{
+    font-family: "Syne";
+    src: url("./fonts/Syne.ttf");
+    background: linear-gradient(to right top, #0a2463, #123e7e, #1d5999, #2b75b3, #3e92cc);
+    background-attachment: fixed;
+}
+.mc-bg{
+    background: linear-gradient(to right top, #0a2463, #123e7e, #1d5999, #2b75b3, #3e92cc);
+    background-attachment: fixed;
+}
