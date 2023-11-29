@@ -1,29 +1,30 @@
-import fb_svg from '../assets/svg/fb.svg'
+import wsp_svg from '../assets/svg/wsp.svg'
 
 import product_1_img from '../assets/img/clorox1.png'
-import product_2_img from '../assets/img/zife-lavander.png'
-import product_3_img from '../assets/img/pure-bright1.png'
-import product_4_img from '../assets/img/carry-out-bags.png'
-import product_5_img from '../assets/img/thankyou-bags2.png'
-import product_6_img from '../assets/img/vinyl_gloves.png'
-import product_7_img from '../assets/img/finitex-gloves.png'
-import product_8_img from '../assets/img/fabuloso.png'
+import product_2_img from '../assets/img/cleaning_soap.png'
+import product_3_img from '../assets/img/cleaner_degreaser.png'
+import product_4_img from '../assets/img/thankyou-bags.png'
+import product_5_img from '../assets/img/carry-out-bags.png'
+import product_6_img from '../assets/img/nitrolatex_gloves.png'
+import product_7_img from '../assets/img/vinyl_gloves.png'
+import product_8_img from '../assets/img/zife-lavander.png'
 import product_9_img from '../assets/img/forks.png'
 import product_10_img from '../assets/img/60galon-bags.png'
-import product_11_img from '../assets/img/cloth_fiber.png'
-import product_12_img from '../assets/img/60galon-bags.png'
+import product_11_img from '../assets/img/steel_scrubbers.png'
+import product_12_img from '../assets/img/napkins1.png'
 import product_13_img from '../assets/img/straws2.png'
+import product_14_img from '../assets/img/hand-roller.png'
 
 
 export const CONTACTS = [
-    'test@example.com',
+    'Seba456698@gmail.com',
     '+1 (305) 391-0750'
 ]
 export const SOCIALS = [
     {
-      name: 'facebook',
-      url: 'http://www.facebook.com',
-      svg: fb_svg
+      name: 'whatsapp',
+      url: 'https://wa.me/13053910750',
+      svg: wsp_svg
     }
 ]
 export const LINKS = [
@@ -53,30 +54,36 @@ export const PRODUCTS = [
         img: product_1_img,
         price: 18.00,
         highlight: true,
+        stock : true,
         display: {
             'en': {
                 name: 'Bleach',
-                desc: '6 Gallons CS'
+                stock: 'Out of Stock',
+                desc: '1x6 Gallons 1 CS'
             },
             'es': {
                 name: 'Cloro',
-                desc: '6 Galones CS'
+                stock: 'No disponible',
+                desc: '6 Galones 1 CS'
             }
         },
     },
     {
         id: 2,
         img: product_2_img,
-        price: 23.00,
+        price: 27.00,
         highlight: true,
+        stock : true,
         display: {
             'en': {
-                name: 'Cleaning Soap',
-                desc: '4 Gallons CS'
+                name: 'Ultra Pot & Pan Dishwashing Liquid',
+                stock: 'Out of Stock',
+                desc: '1x4 Gallons 1 CS'
             },
             'es': {
                 name: 'Jabón de Limpieza',
-                desc: '4 Galones CS'
+                stock: 'No disponible',
+                desc: '1x4 Galones 1 CS'
             }
         },
     },
@@ -85,14 +92,17 @@ export const PRODUCTS = [
         img: product_3_img,
         price: 23.00,
         highlight: true,
+        stock : true,
         display: {
             'en': {
-                name: 'Strong Degreaser',
-                desc: '4 Gallons CS'
+                name: 'Degreaser Clear',
+                stock: 'Out of Stock',
+                desc: '1x4 Gallons 1 CS'
             },
             'es': {
                 name: 'Desengrasante Fuerte',
-                desc: '4 Galones CS'
+                stock: 'No disponible',
+                desc: '1x4 Galones 1 CS'
             }
         },
     },
@@ -101,14 +111,17 @@ export const PRODUCTS = [
         img: product_4_img,
         price: 16.00,
         highlight: false,
+        stock : true,
         display: {
             'en': {
                 name: 'Thank you Bags',
-                desc: '700 Units CS'
+                stock: 'Out of Stock',
+                desc: '700 Units 1 CS'
             },
             'es': {
                 name: 'Bolsas de Agradecimiento',
-                desc: '700 Unidades CS'
+                stock: 'No disponible',
+                desc: '700 Unidades 1 CS'
             }
         },
     },
@@ -117,46 +130,55 @@ export const PRODUCTS = [
         img: product_5_img,
         price: 19.00,
         highlight: false,
+        stock : true,
         display: {
             'en': {
                 name: 'Quality Thank You Bags',
-                desc: '1,000 Units CS'
+                stock: 'Out of Stock',
+                desc: '1,000 Units 1 CS'
             },
             'es': {
                 name: 'Bolsas de Agradecimiento de Calidad',
-                desc: '1,000 Unidades CS'
+                stock: 'No disponible',
+                desc: '1,000 Unidades 1 CS'
             }
         },
     },
     {
         id: 6,
         img: product_6_img,
-        price: 25.00,
+        price: 28.00,
         highlight: false,
+        stock : true,
         display: {
             'en': {
                 name: 'Nitrolatex Gloves',
-                desc: 'CS' //NOTE: Ask Sebas for the full description
+                stock: 'Out of Stock',
+                desc: '10x100 1 CS' //NOTE: Ask Sebas for the full description
             },
             'es': {
                 name: 'Guantes Nitrolatex',
-                desc: 'CS' //NOTA: Preguntar a Sebas por la descripción completa
+                stock: 'No disponible',
+                desc: '10x100 1 CS' //NOTA: Preguntar a Sebas por la descripción completa
             }
         },
     },
     {
         id: 7,
         img: product_7_img,
-        price: 20.00,
+        price: 18.00,
         highlight: false,
+        stock : true,
         display: {
             'en': {
                 name: 'Transparent Vinyl Gloves',
-                desc: 'CS'
+                stock: 'Out of Stock',
+                desc: '10x100 1 CS'
             },
             'es': {
                 name: 'Guantes de Vinilo Transparente',
-                desc: 'CS'
+                stock: 'No disponible',
+                desc: '10x100 1 CS'
             }
         },
     },
@@ -165,30 +187,36 @@ export const PRODUCTS = [
         img: product_8_img,
         price: 20.00,
         highlight: false,
+        stock : true,
         display: {
             'en': {
                 name: 'Fabulous Purpose Cleaner',
-                desc: '4 Units'
+                stock: 'Out of Stock',
+                desc: '1x4 Units'
             },
             'es': {
                 name: 'Limpiador de Propósito Fabuloso',
-                desc: '4 Unidades'
+                stock: 'No disponible',
+                desc: '1x4 Unidades'
             }
         },
     },
     {
         id: 9,
         img: product_9_img,
-        price: 15.00,
+        price: 14.00,
         highlight: false,
+        stock : true,
         display: {
             'en': {
                 name: 'Forks and Spoons',
-                desc: '1,000 Units CS'
+                stock: 'Out of Stock',
+                desc: '1,000 Units 1 CS'
             },
             'es': {
                 name: 'Tenedores y Cucharas',
-                desc: '1,000 Unidades CS'
+                stock: 'No disponible',
+                desc: '1,000 Unidades 1 CS'
             }
         },
     },
@@ -197,14 +225,17 @@ export const PRODUCTS = [
         img: product_10_img,
         price: 25.00,
         highlight: false,
+        stock : true,
         display: {
             'en': {
                 name: 'Garbage Bags',
-                desc: '40x46 45 Gallons - 100 Units CS'
+                stock: 'Out of Stock',
+                desc: '40x46 45 Gallons - 100 Units 1 CS'
             },
             'es': {
                 name: 'Bolsas de Basura',
-                desc: '40x46 45 Galones - 100 Unidades CS'
+                stock: 'No disponible',
+                desc: '40x46 45 Galones - 100 Unidades 1 CS'
             }
         },
     },
@@ -213,14 +244,17 @@ export const PRODUCTS = [
         img: product_11_img,
         price: 5.00,
         highlight: false,
+        stock : true,
         display: {
             'en': {
-                name: 'Cleaning Fibers',
-                desc: '15 Units'
+                name: 'Steel Scrubbers',
+                stock: 'Out of Stock',
+                desc: '15 Units 1 Bags'
             },
             'es': {
-                name: 'Fibras de Limpieza',
-                desc: '15 Unidades'
+                name: 'Fibras de metal',
+                stock: 'No disponible',
+                desc: '15 Unidades 1 Bolsa'
             }
         },
     },
@@ -229,30 +263,55 @@ export const PRODUCTS = [
         img: product_12_img,
         price: 25.00,
         highlight: false,
+        stock : true,
         display: {
             'en': {
                 name: 'Tallfold Napkin',
-                desc: '20 Pack of Napkins - 10,000 PCs'
+                stock: 'Out of Stock',
+                desc: '16 Pack of Napkins - 10,000 PCs'
             },
             'es': {
                 name: 'Servilleta Tallfold',
-                desc: '20 Paquete de Servilletas - 10,000 Unidades'
+                stock: 'No disponible',
+                desc: '16 Paquete de Servilletas - 10,000 Unidades'
             }
         },
     },
     {
         id: 13,
         img: product_13_img,
-        price: 6.00,
+        price: 7.00,
         highlight: false,
+        stock : true,
         display: {
             'en': {
                 name: 'Straws',
+                stock: 'Out of Stock',
                 desc: '500 PC'
             },
             'es': {
                 name: 'Pajitas',
+                stock: 'No disponible',
                 desc: '500 Unidades'
+            }
+        },
+    },
+    {
+        id: 14,
+        img: product_14_img,
+        price: 20.00,
+        highlight: false,
+        stock : true,
+        display: {
+            'en': {
+                name: 'Paper Towel Rolls',
+                stock: 'Out of Stock',
+                desc: '1x6 1 CS'
+            },
+            'es': {
+                name: 'Rollos de toallas de papel',
+                stock: 'No disponible',
+                desc: '1x6 1 CS'
             }
         },
     }

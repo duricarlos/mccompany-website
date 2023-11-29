@@ -10,8 +10,8 @@ import { CONTACTS, LINKS, SOCIALS, PRODUCTS } from "./utils/db"
 
 
 
-export default function ShopPage({currentLang, currentPath}){
-    console.log('currentLang from shop page:' + currentLang)
+export default function ShopPage({currentLang = 'en', currentPath = '/shop/'}){
+    console.log('currentLang from home page:' + currentLang)
 
   const lang = LANGUAGE[currentLang]
 
@@ -22,7 +22,7 @@ export default function ShopPage({currentLang, currentPath}){
             {
                       PRODUCTS.map(item => {
                             return(
-                                <ProductCard key={item.id} lang={lang} name={item.display[lang.lang].name} desc={item.display[lang.lang].desc} img={item.img} price={item.price} />
+                                <ProductCard key={item.id} lang={lang} stock={item.stock} stockText={item.display[lang.lang].stock} name={item.display[lang.lang].name} desc={item.display[lang.lang].desc} img={item.img} price={item.price} />
                             )
                       })
                 }

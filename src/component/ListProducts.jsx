@@ -6,8 +6,7 @@ const ListProducts = ({ ...props }) => {
     extraClass="bg-zinc-700 self-center mt-10"
     text={props.lang.listproducts_buttom}
     iconSrc='https://cdn.builder.io/api/v1/image/assets/TEMP/3b6237eb-3014-4b57-bbf8-cad37df558c1?'
-    href='#'
-    target="_blank"
+    href='/shop'
   />
   return (
     <article className="px-5 py-20 max-md:max-w-full justify-center">

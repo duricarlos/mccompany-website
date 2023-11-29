@@ -36,7 +36,7 @@ export default function Header ({ currentLang, currentPath }) {
       />
       <nav className="items-start self-stretch flex justify-between gap-5 max-md:justify-center">
         {LINKS.map(item => {
-          console.log(LINKS)
+
           return (
             <Link key={item.name} to={item.url+lang.lang} className="text-mc-black text-base leading-6 self-center my-auto hover:underline">
               {item.display[lang.lang]}

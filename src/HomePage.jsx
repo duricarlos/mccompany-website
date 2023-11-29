@@ -18,16 +18,8 @@ import { CONTACTS, LINKS, SOCIALS, PRODUCTS } from "./utils/db"
 
 import { redirect } from "react-router-dom"
 
-export default function HomePage({currentLang, currentPath}) {
+export default function HomePage({currentLang = 'en', currentPath = '/'}) {
     console.log('currentLang from home page:' + currentLang)
-    if(currentLang === undefined) {
-        currentLang = 'en'
-        redirect("/en");
-    }
-    if(currentPath === undefined) {
-        currentPath = '/'
-        redirect("/en");
-    }
 
   const lang = LANGUAGE[currentLang]
     return (

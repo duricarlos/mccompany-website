@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 export const Anchor = ({ extraClass = '', text, textFirst = true, iconSrc = '', href = '#', target = ''}) =>{
     const buttonClass =
@@ -10,7 +11,7 @@ export const Anchor = ({ extraClass = '', text, textFirst = true, iconSrc = '', 
     const showTextFirst = textFirst ? textContainer : ""
     const showTextSecond = textFirst ? "" : textContainer
     return (
-        <a className={buttonClass} href={href} target={target}>
+        <Link className={buttonClass} to={href} target={target}>
             {showTextFirst}
             {iconSrc='' && 
             <img
@@ -19,6 +20,6 @@ export const Anchor = ({ extraClass = '', text, textFirst = true, iconSrc = '', 
                 className="aspect-square object-contain object-center w-6 overflow-hidden shrink-0 max-w-full"
             /> } 
             {showTextSecond}
-        </a>
+        </Link>
     )
 }

@@ -1,6 +1,15 @@
 import { Anchor } from "./Anchor"
 import 'animate.css';
 
+function outStock(text){
+  console.log('test')
+  return(
+    <div className="overflow-hidden dropshadow-md text-red-200 text-ellipsis font-thin leading-6 mt-2">
+      {text}
+    </div>
+  )
+}
+
 
 const ProductCard = ({ ...props }) => {
     return (
@@ -20,6 +29,7 @@ const ProductCard = ({ ...props }) => {
           <div className="overflow-hidden text-mc-black text-ellipsis font-thin leading-6 mt-2">
             {props.desc}
           </div>
+          { props.stock ? '' : outStock(props.stockText) }
           <div className="flex justify-between">
           <Anchor
             extraClass="bg-emerald-400 self-center mt-10 text-mc-black"
