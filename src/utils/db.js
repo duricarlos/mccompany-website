@@ -14,6 +14,7 @@ import product_11_img from '../assets/img/steel_scrubbers.png'
 import product_12_img from '../assets/img/napkins1.png'
 import product_13_img from '../assets/img/straws2.png'
 import product_14_img from '../assets/img/hand-roller.png'
+import product_15_img from '../assets/img/paper_towels.png'
 
 
 export const CONTACTS = [
@@ -312,6 +313,25 @@ export const PRODUCTS = [
                 name: 'Rollos de toallas de papel',
                 stock: 'No disponible',
                 desc: '1x6 1 CS'
+            }
+        },
+    },
+    {
+        id: 15,
+        img: product_15_img,
+        price: 13.00,
+        highlight: false,
+        stock : true,
+        display: {
+            'en': {
+                name: 'Hand Paper Rolls',
+                stock: 'Out of Stock',
+                desc: '1x12 1 CS'
+            },
+            'es': {
+                name: 'Rollos de papel',
+                stock: 'No disponible',
+                desc: '1x12 1 CS'
             }
         },
     }
