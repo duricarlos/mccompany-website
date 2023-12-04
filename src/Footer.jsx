@@ -28,7 +28,7 @@ const Footer = ({ info, socials, lang }) => {
               return (
                 <li key={item} className="text-mc-black text-base leading-6 self-center my-auto hover:underline">
                   <a href={item.url}>
-                    <img src={item.svg} alt="item.name" width='25'/>
+                    <img src={item.svg} alt={item.name} width='25'/>
                   </a>
                 </li>
               )
