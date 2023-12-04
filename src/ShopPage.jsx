@@ -22,7 +22,7 @@ export default function ShopPage({currentLang = 'en', currentPath = '/shop/'}){
             {
                       PRODUCTS.map(item => {
                             return(
-                                <ProductCard key={item.id} lang={lang} stock={item.stock} stockText={item.display[lang.lang].stock} name={item.display[lang.lang].name} desc={item.display[lang.lang].desc} img={item.img} price={item.price} />
+                                <ProductCard key={item.id} idproduct={item.id} lang={lang} stock={item.stock} stockText={item.display[lang.lang].stock} name={item.display[lang.lang].name} desc={item.display[lang.lang].desc} img={item.img} pricetext={lang.price} lowprice={item.lowprice} highprice={item.highprice} />
                             )
                       })
                 }

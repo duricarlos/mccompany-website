@@ -26,7 +26,8 @@ export default {
       }
     },
     fontFamily: {
-      'syne': ['Syne']
+      'syne': ['Syne'],
+      'sans': ['ui-sans-serif', 'system-ui']
     },
     keyframes: {
       typing: {

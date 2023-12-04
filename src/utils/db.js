@@ -53,7 +53,8 @@ export const PRODUCTS = [
     {
         id: 1,
         img: product_1_img,
-        price: 18.00,
+        lowprice: 18.00,
+        highprice: 18.00,
         highlight: true,
         stock : true,
         display: {
@@ -72,7 +73,8 @@ export const PRODUCTS = [
     {
         id: 2,
         img: product_2_img,
-        price: 27.00,
+        lowprice: 27.00,
+        highprice: 27.00,
         highlight: true,
         stock : true,
         display: {
@@ -91,7 +93,8 @@ export const PRODUCTS = [
     {
         id: 3,
         img: product_3_img,
-        price: 23.00,
+        lowprice: 23.00,
+        highprice: 23.00,
         highlight: true,
         stock : true,
         display: {
@@ -110,12 +113,13 @@ export const PRODUCTS = [
     {
         id: 4,
         img: product_4_img,
-        price: 16.00,
+        lowprice: 16.00,
+        highprice: 16.00,
         highlight: false,
         stock : true,
         display: {
             'en': {
-                name: 'Thank you Bags',
+                name: 'Thank You Bags',
                 stock: 'Out of Stock',
                 desc: '700 Units 1 CS'
             },
@@ -129,7 +133,8 @@ export const PRODUCTS = [
     {
         id: 5,
         img: product_5_img,
-        price: 19.00,
+        lowprice: 19.00,
+        highprice: 19.00,
         highlight: false,
         stock : true,
         display: {
@@ -148,7 +153,8 @@ export const PRODUCTS = [
     {
         id: 6,
         img: product_6_img,
-        price: 28.00,
+        lowprice: 28.00,
+        highprice: 28.00,
         highlight: false,
         stock : true,
         display: {
@@ -167,7 +173,8 @@ export const PRODUCTS = [
     {
         id: 7,
         img: product_7_img,
-        price: 18.00,
+        lowprice: 18.00,
+        highprice: 18.00,
         highlight: false,
         stock : true,
         display: {
@@ -186,7 +193,8 @@ export const PRODUCTS = [
     {
         id: 8,
         img: product_8_img,
-        price: 20.00,
+        lowprice: 20.00,
+        highprice: 20.00,
         highlight: false,
         stock : true,
         display: {
@@ -205,7 +213,8 @@ export const PRODUCTS = [
     {
         id: 9,
         img: product_9_img,
-        price: 14.00,
+        lowprice: 14.00,
+        highprice: 14.00,
         highlight: false,
         stock : true,
         display: {
@@ -224,7 +233,8 @@ export const PRODUCTS = [
     {
         id: 10,
         img: product_10_img,
-        price: 25.00,
+        lowprice: 25.00,
+        highprice: 25.00,
         highlight: false,
         stock : true,
         display: {
@@ -243,7 +253,8 @@ export const PRODUCTS = [
     {
         id: 11,
         img: product_11_img,
-        price: 5.00,
+        lowprice: 5.00,
+        highprice: 5.00,
         highlight: false,
         stock : true,
         display: {
@@ -262,7 +273,8 @@ export const PRODUCTS = [
     {
         id: 12,
         img: product_12_img,
-        price: 25.00,
+        lowprice: 25.00,
+        highprice: 25.00,
         highlight: false,
         stock : true,
         display: {
@@ -281,7 +293,8 @@ export const PRODUCTS = [
     {
         id: 13,
         img: product_13_img,
-        price: 7.00,
+        lowprice: 7.00,
+        highprice: 7.00,
         highlight: false,
         stock : true,
         display: {
@@ -300,7 +313,8 @@ export const PRODUCTS = [
     {
         id: 14,
         img: product_14_img,
-        price: 20.00,
+        lowprice: 20.00,
+        highprice: 20.00,
         highlight: false,
         stock : true,
         display: {
@@ -319,7 +333,8 @@ export const PRODUCTS = [
     {
         id: 15,
         img: product_15_img,
-        price: 13.00,
+        lowprice: 13.00,
+        highprice: 13.00,
         highlight: false,
         stock : true,
         display: {

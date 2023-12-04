@@ -3,6 +3,7 @@ import './App.css'
 
 import HomePage from './HomePage'
 import ShopPage from './ShopPage'
+import ProductPage from './ProductPage'
 
 import { Route, Routes } from 'react-router-dom'
 
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/shop" element={<ShopPage />} />
           <Route path='/shop/en' element={<ShopPage currentLang='en' currentPath='/shop/' />}></Route>
           <Route path='/shop/es' element={<ShopPage currentLang='es' currentPath='/shop/' />}></Route>
+          <Route path="/product/:productId" element={<ProductPage />} />
 
         </Routes>
       </main>

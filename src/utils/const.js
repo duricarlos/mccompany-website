@@ -3,6 +3,7 @@
 export const LANGUAGE = {
   'en' : {
       lang : 'en',
+      price: 'Price',
       featured_products_title : 'Featured Products',
       featured_products_desc : 'Most wanted products',
       imagesdisplay_title : 'All purpose cleaning products',
@@ -29,6 +30,7 @@ export const LANGUAGE = {
   },
   'es' : {
     lang : 'es',
+    price : 'Precio',
     featured_products_title : 'Productos Destacados',
     featured_products_desc : 'Productos más buscados',
     imagesdisplay_title : 'Productos de limpieza multiusos',
