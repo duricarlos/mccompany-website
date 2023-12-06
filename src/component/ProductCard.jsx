@@ -34,7 +34,7 @@ const ProductCard = ({ ...props }) => {
           <button onClick={async () => {
             const shareData = {
               title: props.name,
-              text: "Check this out!",
+              text: props.name + ' | MC Company',
               url: "https://"+window.location.hostname+linktoProduct,
             };
             try {
