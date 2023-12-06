@@ -54,7 +54,7 @@ export const PRODUCTS = [
         id: 1,
         img: product_1_img,
         lowprice: 18.00,
-        highprice: 18.00,
+        highprice: 42.00,
         highlight: true,
         stock : true,
         display: {
@@ -74,7 +74,7 @@ export const PRODUCTS = [
         id: 2,
         img: product_2_img,
         lowprice: 27.00,
-        highprice: 27.00,
+        highprice: 36.00,
         highlight: true,
         stock : true,
         display: {
@@ -94,7 +94,7 @@ export const PRODUCTS = [
         id: 3,
         img: product_3_img,
         lowprice: 23.00,
-        highprice: 23.00,
+        highprice: 28.00,
         highlight: true,
         stock : true,
         display: {
@@ -114,7 +114,7 @@ export const PRODUCTS = [
         id: 4,
         img: product_4_img,
         lowprice: 16.00,
-        highprice: 16.00,
+        highprice: 19.00,
         highlight: false,
         stock : true,
         display: {
@@ -133,8 +133,8 @@ export const PRODUCTS = [
     {
         id: 5,
         img: product_5_img,
-        lowprice: 19.00,
-        highprice: 19.00,
+        lowprice: 18.00,
+        highprice: 22.00,
         highlight: false,
         stock : true,
         display: {
@@ -154,7 +154,7 @@ export const PRODUCTS = [
         id: 6,
         img: product_6_img,
         lowprice: 28.00,
-        highprice: 28.00,
+        highprice: 40.00,
         highlight: false,
         stock : true,
         display: {
@@ -174,7 +174,7 @@ export const PRODUCTS = [
         id: 7,
         img: product_7_img,
         lowprice: 18.00,
-        highprice: 18.00,
+        highprice: 28.00,
         highlight: false,
         stock : true,
         display: {
@@ -194,7 +194,7 @@ export const PRODUCTS = [
         id: 8,
         img: product_8_img,
         lowprice: 20.00,
-        highprice: 20.00,
+        highprice: 29.00,
         highlight: false,
         stock : true,
         display: {
@@ -213,8 +213,8 @@ export const PRODUCTS = [
     {
         id: 9,
         img: product_9_img,
-        lowprice: 14.00,
-        highprice: 14.00,
+        lowprice: 12.00,
+        highprice: 16.00,
         highlight: false,
         stock : true,
         display: {
@@ -234,7 +234,7 @@ export const PRODUCTS = [
         id: 10,
         img: product_10_img,
         lowprice: 25.00,
-        highprice: 25.00,
+        highprice: 42.00,
         highlight: false,
         stock : true,
         display: {
@@ -254,7 +254,7 @@ export const PRODUCTS = [
         id: 11,
         img: product_11_img,
         lowprice: 5.00,
-        highprice: 5.00,
+        highprice: 15.00,
         highlight: false,
         stock : true,
         display: {
@@ -274,7 +274,7 @@ export const PRODUCTS = [
         id: 12,
         img: product_12_img,
         lowprice: 25.00,
-        highprice: 25.00,
+        highprice: 42.00,
         highlight: false,
         stock : true,
         display: {
@@ -294,7 +294,7 @@ export const PRODUCTS = [
         id: 13,
         img: product_13_img,
         lowprice: 7.00,
-        highprice: 7.00,
+        highprice: 9.00,
         highlight: false,
         stock : true,
         display: {
@@ -313,8 +313,8 @@ export const PRODUCTS = [
     {
         id: 14,
         img: product_14_img,
-        lowprice: 20.00,
-        highprice: 20.00,
+        lowprice: 18.00,
+        highprice: 26.00,
         highlight: false,
         stock : true,
         display: {
@@ -334,7 +334,7 @@ export const PRODUCTS = [
         id: 15,
         img: product_15_img,
         lowprice: 13.00,
-        highprice: 13.00,
+        highprice: 17.00,
         highlight: false,
         stock : true,
         display: {
