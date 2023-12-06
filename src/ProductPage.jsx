@@ -54,6 +54,7 @@ export default function HomePage({ currentLang = 'en', currentPath = '/' }) {
                     lowprice={product.lowprice}
                     highprice={product.highprice}
                     productpage={true}
+                    idproduct={productId}
                 />
 
             </section>

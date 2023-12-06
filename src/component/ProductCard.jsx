@@ -66,7 +66,7 @@ const ProductCard = ({ ...props }) => {
             extraClass="bg-emerald-400 self-center mt-10 text-mc-black"
             text={props.lang.productcard_buttomwhatsapp}
             iconSrc='https://cdn.builder.io/api/v1/image/assets/TEMP/3b6237eb-3014-4b57-bbf8-cad37df558c1?'
-            href={`https://wa.me/13053910750?text=${encodeURIComponent(props.lang.productcard_message + props.name)}`}
+            href={`https://wa.me/13053910750?text=${encodeURIComponent(props.lang.productcard_message + props.name+ ' ' + 'https://' + window.location.hostname+linktoProduct)}`}
             target="_blank"
           />
           <Anchor
