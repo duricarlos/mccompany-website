@@ -15,6 +15,7 @@ import product_12_img from '../assets/img/napkins1.png'
 import product_13_img from '../assets/img/straws2.png'
 import product_14_img from '../assets/img/hand-roller.png'
 import product_15_img from '../assets/img/paper_towels.png'
+import product_16_img from '../assets/img/forkspackage.png'
 
 
 export const CONTACTS = [
@@ -93,7 +94,7 @@ export const PRODUCTS = [
     {
         id: 3,
         img: product_3_img,
-        lowprice: 23.00,
+        lowprice: 20.00,
         highprice: 28.00,
         highlight: true,
         stock : true,
@@ -347,6 +348,26 @@ export const PRODUCTS = [
                 name: 'Rollos de papel',
                 stock: 'No disponible',
                 desc: '1x12 1 CS'
+            }
+        },
+    },
+    {
+        id: 16,
+        img: product_16_img,
+        lowprice: 22.00,
+        highprice: 28.00,
+        highlight: false,
+        stock : true,
+        display: {
+            'en': {
+                name: 'Set Plastic Cutlery Packets',
+                stock: 'Out of Stock',
+                desc: '1x250 1 CS'
+            },
+            'es': {
+                name: 'Conjunto de Paquetes de cubiertos de plastico',
+                stock: 'No disponible',
+                desc: '1x250 1 CS'
             }
         },
     }

@@ -33,7 +33,7 @@ export default function HomePage({currentLang = 'en', currentPath = '/'}) {
                       PRODUCTS.map(item => {
                         if (item.highlight){
                             return(
-                                <ProductCard key={item.id} idproduct={item.id} lang={lang} name={item.display[lang.lang].name} desc={item.display[lang.lang].desc} img={item.img} lowprice={item.lowprice} highprice={item.highprice} />
+                                <ProductCard key={item.id} idproduct={item.id} lang={lang} pricetext={lang.price} name={item.display[lang.lang].name} desc={item.display[lang.lang].desc} img={item.img} lowprice={item.lowprice} highprice={item.highprice} />
                             )
                         }
                       })

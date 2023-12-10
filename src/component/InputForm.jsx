@@ -1,5 +1,5 @@
 export const InputForm = ({ ...props }) => {
-    const inputClass = 'text-base items-stretch rounded-lg p-2 my-2 '
+    const inputClass = 'text-black text-base items-stretch rounded-lg p-2 my-2 '
         + props.extraClass
     return (
         <div className='grid grid-rows-1 w-full md:w-1/2 my-2'>
