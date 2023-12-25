@@ -370,5 +370,25 @@ export const PRODUCTS = [
                 desc: '1x250 1 CS'
             }
         },
+    },
+    {
+        id: 17,
+        img: product_17_img,
+        lowprice: 22.00,
+        highprice: 28.00,
+        highlight: false,
+        stock : true,
+        display: {
+            'en': {
+                name: 'Disposable Dishes',
+                stock: 'Out of Stock',
+                desc: '1x200 1 CS'
+            },
+            'es': {
+                name: 'Platos desechables',
+                stock: 'No disponible',
+                desc: '1x200 1 CS'
+            }
+        },
     }
 ];
