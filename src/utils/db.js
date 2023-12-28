@@ -16,6 +16,7 @@ import product_13_img from '../assets/img/straws2.png'
 import product_14_img from '../assets/img/hand-roller.png'
 import product_15_img from '../assets/img/paper_towels.png'
 import product_16_img from '../assets/img/forkspackage.png'
+import product_17_img from '../assets/img/disposabledishes.png'
 
 
 export const CONTACTS = [
@@ -375,19 +376,39 @@ export const PRODUCTS = [
         id: 17,
         img: product_17_img,
         lowprice: 22.00,
-        highprice: 28.00,
+        highprice: 25.00,
         highlight: false,
         stock : true,
         display: {
             'en': {
                 name: 'Disposable Dishes',
                 stock: 'Out of Stock',
-                desc: '1x200 1 CS'
+                desc: ' 200 Pieces 9X9'
             },
             'es': {
                 name: 'Platos desechables',
                 stock: 'No disponible',
-                desc: '1x200 1 CS'
+                desc: '200 piezas de 9X9'
+            }
+        },
+    },
+    {
+        id: 18,
+        img: product_17_img,
+        lowprice: 20.00,
+        highprice: 23.00,
+        highlight: false,
+        stock : true,
+        display: {
+            'en': {
+                name: 'Disposable Dishes',
+                stock: 'Out of Stock',
+                desc: ' 200 Pieces 8X8'
+            },
+            'es': {
+                name: 'Platos desechables',
+                stock: 'No disponible',
+                desc: '200 piezas de 8X8'
             }
         },
     }
