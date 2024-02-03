@@ -28,7 +28,8 @@ const ProductCard = ({ ...props }) => {
 
           <img
             loading="lazy"
-            srcSet={props.img}
+            // srcSet={props.img}
+            src={props.img}
             className="aspect-video object-contain object-center w-full overflow-hidden drop-shadow-xl"
           />
           <button onClick={async () => {

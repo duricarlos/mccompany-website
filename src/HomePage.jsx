@@ -14,29 +14,45 @@ import commercial_img from './assets/img/commercial-img.avif'
 
 
 import { LANGUAGE } from "./utils/const"
-import { CONTACTS, LINKS, SOCIALS, PRODUCTS } from "./utils/db"
+import { CONTACTS, LINKS, SOCIALS } from "./utils/db"
 
 import { redirect } from "react-router-dom"
+import { useEffect, useState } from "react"
 
-export default function HomePage({currentLang = 'en', currentPath = '/'}) {
-    console.log('currentLang from home page:' + currentLang)
 
-  const lang = LANGUAGE[currentLang]
+async function fetchProducts() {
+    const response = await fetch('https://mccompanysebasprodus.com/api/products', );
+    const products = await response.json();
+    return products;
+}
+
+
+
+
+export default function HomePage({ currentLang = 'en', currentPath = '/' }) {
+    const [apiProducts, setApiProducts] = useState([])
+
+    const lang = LANGUAGE[currentLang]
+    useEffect(() => {
+        fetchProducts().then((products) => {
+            setApiProducts(products)
+        })
+    } , [currentLang])
+
     return (
         <>
-            <Header links={LINKS} currentLang={currentLang} currentPath={currentPath}/>
+            <Header links={LINKS} currentLang={currentLang} currentPath={currentPath} />
 
-            <Hero lang={lang}/>
-
+            <Hero lang={lang} />
             <ListProducts lang={lang} title={lang.featured_products_title} description={lang.featured_products_desc} showShopBtn={true} >
                 {
-                      PRODUCTS.map(item => {
-                        if (item.highlight){
-                            return(
-                                <ProductCard key={item.id} idproduct={item.id} lang={lang} pricetext={lang.price} name={item.display[lang.lang].name} desc={item.display[lang.lang].desc} img={item.img} lowprice={item.lowprice} highprice={item.highprice} />
+                    apiProducts.map(item => {
+                        if (item.highlight) {
+                            return (
+                                <ProductCard key={item.id} pricetext={lang.price} lang={lang} name={item.display[lang.lang].name} desc={item.display[lang.lang].desc} img={item.img} lowprice={item.lowprice} highprice={item.highprice} linktoProduct={'/product/' + item.id} />
                             )
                         }
-                      })
+                    })
                 }
             </ListProducts>
 
@@ -46,7 +62,7 @@ export default function HomePage({currentLang = 'en', currentPath = '/'}) {
                 <ImageCard title={lang.imagesdisplay_commercial} img={commercial_img} />
             </ImagesDisplay>
 
-            <ContactForm lang={lang}/>
+            <ContactForm lang={lang} />
             <Footer lang={lang} info={CONTACTS} socials={SOCIALS} />
         </>
     )

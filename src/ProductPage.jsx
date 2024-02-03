@@ -9,17 +9,47 @@ import { useParams } from 'react-router-dom'
 import { Helmet } from 'react-helmet';
 
 import { LANGUAGE } from "./utils/const"
-import { CONTACTS, LINKS, SOCIALS, PRODUCTS } from "./utils/db"
+import { CONTACTS, LINKS, SOCIALS } from "./utils/db"
+import { useState, useEffect } from "react"
 
+
+async function fetchProducts() {
+    const response = await fetch('https://mccompanysebasprodus.com/api/products', );
+    const products = await response.json();
+    return products;
+}
 
 
 export default function HomePage({ currentLang = 'en', currentPath = '/' }) {
-    console.log('currentLang from home page:' + currentLang)
 
     const { productId } = useParams()
     const lang = LANGUAGE[currentLang]
-    const product = PRODUCTS[productId - 1]
-
+    const defaultProduct = {
+        id: 1,
+        img: " ",
+        lowprice: 0.00,
+        highprice: 0.00,
+        highlight: false,
+        stock : true,
+        display: {
+            'en': {
+                name: 'Loading...',
+                stock: 'Loading...',
+                desc: 'Loading...'
+            },
+            'es': {
+                name: 'Cargando...',
+                stock: 'Cargando...',
+                desc: 'Cargando...'
+            }
+        },
+    }
+    const [product, setProduct] = useState(defaultProduct)
+    useEffect(() => {
+        fetchProducts().then((products) => {
+            setProduct(products[productId - 1])
+        })
+    } , [])
     return (
         <>
             <Helmet>
